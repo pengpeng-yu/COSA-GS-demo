@@ -1,0 +1,14 @@
+.idea/
+.vscode/
+__pycache__/
+build/
+.DS_Store
+*.zip
+
+/bin
+/datasets/*
+!/datasets/mipnerf360_flowers_DSC9144/
+/local_dev
+/outputs/*
+!/outputs/mipnerf360_30k_int_flowers_lmb0.0006/
+/AGENTS.md

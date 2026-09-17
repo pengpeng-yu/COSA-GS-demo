@@ -1,0 +1,11 @@
+{
+  "old_anchor_count": 811376,
+  "anchor_count": 360365,
+  "removed_anchor_count": 451011,
+  "active_offset_count": 946343,
+  "active_offset_fraction": 0.11663433475971682,
+  "mask_finalized": true,
+  "optimizer_state_preserved": true,
+  "optimizer_state_mode": 1,
+  "iteration": 25000
+}

@@ -1,0 +1,19 @@
+{
+  "ours_30000": {
+    "PSNR": 21.397706985473633,
+    "SSIM": 0.5812139511108398,
+    "LPIPS": 0.3789619505405426,
+    "L1": 0.05685059726238251,
+    "actual_total_bytes": 10563601,
+    "actual_total_MB": 10.563601,
+    "actual_total_MiB": 10.074234962463379,
+    "anchors": 360365,
+    "compress_seconds": 0.1849810890853405,
+    "entropy_encode_seconds": 0.0977825466543436,
+    "anchor_coord_encode_seconds": 0.022716425359249115,
+    "decompress_seconds": 0.21934537030756474,
+    "entropy_decode_seconds": 0.17833762429654598,
+    "anchor_coord_decode_seconds": 0.0224566962569952,
+    "train_seconds": 4701.547391181812
+  }
+}

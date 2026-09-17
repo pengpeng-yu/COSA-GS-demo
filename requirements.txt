@@ -1,0 +1,9 @@
+ninja
+numpy
+einops
+PyYAML
+Pillow
+plyfile
+colorama
+opencv-python
+lpips
