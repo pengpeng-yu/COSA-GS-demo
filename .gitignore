@@ -12,3 +12,4 @@ build/
 /outputs/*
 !/outputs/mipnerf360_30k_int_flowers_lmb0.0006/
 /AGENTS.md
+*.egg-info/
