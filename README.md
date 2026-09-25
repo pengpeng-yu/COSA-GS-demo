@@ -1,6 +1,13 @@
-**COSA-GS** compresses 3D Gaussian Splatting through anchor-wise causal factorization, without spatial aggregation.
-A compact learnable latent is encoded channel by channel, then fused with each anchor's own coordinate-derived context to model attribute groups causally.
-Using only anchor-wise linear layers and activations for context modeling, COSA-GS achieves state-of-the-art compression performance with fast decoding on Mip-NeRF360, DeepBlending, Tanks&Temples, and BungeeNeRF.
+3D Gaussian Splatting (3DGS) enables high-quality novel-view synthesis but requires substantial storage.
+Existing compression methods often rely on spatial context modeling over irregular 3D representations, increasing the complexity of training and coding.
+Meanwhile, floating-point context inference can introduce numerical inconsistencies across platforms, causing entropy-decoding failures.
+To address these practical challenges, we propose **COSA-GS**, which constructs **C**ontext with**O**ut **S**patial **A**ggregation through anchor-wise causal factorization.
+Specifically, we use geometry context derived from each anchor's coordinates to model a compact learnable anchor latent.
+The anchor latent is then fused with the geometry context to form an anchor context for attribute coding.
+The resulting context model features a simple architecture composed solely of linear transformations and activations.
+We train COSA-GS using rate-distortion optimization with adaptive Gaussian pruning.
+Further, we develop quantization-aware training and integer inference for the context model to achieve bit-exact consistency of entropy-decoded symbols across platforms.
+Experiments demonstrate that COSA-GS achieves state-of-the-art compression performance while retaining fast and consistent cross-platform decoding, providing a simple yet effective framework for practical 3DGS compression.
 
 ## Installation
 
